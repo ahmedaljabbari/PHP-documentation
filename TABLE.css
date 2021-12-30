@@ -1,0 +1,19 @@
+.myTable {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    text-align: left;
+    width: 700px;
+    margin: 30px auto;
+}
+.myTable span {
+    color: rosybrown;
+}
+
+.myTable * {
+    margin-bottom: 10px;
+    border-bottom: solid 1px #69696950;
+}
+
+.myTable i , .myTable q, .myTable li, .myTable ul{
+    border: none;
+}

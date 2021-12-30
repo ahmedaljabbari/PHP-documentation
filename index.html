@@ -1,0 +1,2112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./TABLE.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Inconsolata&family=Tajawal:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>PHP - Course</title>
+</head>
+<body>
+    <div class="main-container">
+        <aside>
+            <h1>PHP</h1>
+            <p class="arrays" title="double click to see arrays' methods">Arrays <i class="fas fa-chevron-circle-down"></i></p>
+            <div class="arrays-methods">
+                <p class="inArray">in_array()</p>
+                <p class="arraySearch">array_search()</p>
+                <p class="arrayKeyExist">array_key_exists()</p>
+                <p class="arrayPush">array_push()</p>
+                <p class="arrayUnshift">array_unshift()</p>
+                <p class="arrayPop">array_pop()</p>
+                <p class="arrayShift">array_shift()</p>
+                <p class="arraySort">sort()</p>
+                <p class="arrayRSort">rsort()</p>
+                <p class="arrayASort">asort()</p>
+                <p class="arrayARSort">arsort()</p>
+                <p class="arrayKSort">ksort()</p>
+                <p class="arrayKRSort">krsort()</p>
+                <p class="arrayReverse">array_reverse()</p>
+                <p class="shuffle">shuffle()</p>
+                <p class="arrayFill">array_fill()</p>
+                <p class="arraySum">array_sum()</p>
+                <p class="arrayRand">array_rand()</p>
+                <p class="arrayUnique">array_unique()</p>
+            </div>
+            <p class="strings">String Methods <i class="fas fa-chevron-circle-down"></i></p>
+            <div class="string-methods">
+                <p class="explode">explode()</p>
+                <p class="implode">implode()</p>
+                <p class="strSplit">str_split()</p>
+                <p class="chunkSplit">chunk_split()</p>
+                <p class="strReplace">str_replace()</p>
+                <p class="strRepeat">str_repeat()</p>
+                <p class="strShuffle">str_shuffle()</p>
+                <p class="strlen">strlen()</p>
+                <p class="addSlashes">addslashes()</p>
+                <p class="stripSlashes">stripslashes()</p>
+                <p class="stripTags">strip_tags()</p>
+                <p class="strtoLower">strtolower()</p>
+                <p class="strtoUpper">strtoupper()</p>
+                <p class="lcFirst">lcfirst()</p>
+                <p class="ucfirst">ucfirst()</p>
+                <P class="ucwords">ucwords()</P>
+                <p class="trim">trim()</p>
+                <p class="strWordCount">str_word_count()</p>
+                <p class="parseStr">parse_str()</p>
+                <p class="nl2br">nl2br()</p>
+                <p class="strpos">strpos()</p>
+                <p class="strstr">strstr()</p>
+                <p class="strcmp">strcmp()</p>
+                <p class="strrev">strrev()</p>
+                <p class="substr">substr()</p>
+                <p class="substr_count">substr_count()</p>
+                <p class="substr_compare">substr_compare()</p>
+
+            </div>
+            <p class="fileSystem">File System <i class="fas fa-chevron-circle-down"></i></p>
+            <div class="fileSystem-units">
+                <p class="file_exists">file_exists()</p>
+                <p class="file_put_contents">file_put_contents()</p>
+                <p class="is_writable">is_writable()</p>
+                <p class="directories">directories</p>
+                <p class="dirname">dirname()</p>
+                <p class="basename">basename()</p>
+                <p class="file_put_contents">file_put_contents()</p>
+                <p class="file_get_contents">file_get_contents()</p>
+                <p class="copy">copy()</p>
+                <p class="rename">rename()</p>
+                <p class="pathinfo">pathinfo()</p>
+                <p class="unlink">unlink()</p>
+                <p class="scandir">scandir()</p>
+                <p class="fopen">fopen()</p>
+                <p class="fread">fread()</p>
+                <p class="fwrite">fwrite()</p>
+                <p class="fseek">fseek()</p>
+                <p class="fclose">fclose()</p>
+            </div>
+            <p class="super_globals">Super Globals <i class="fas fa-chevron-circle-down"></i></p>
+            <div class="global">
+                <p class="GLOBALS">$GLOBALS</p>
+                <p class="_server">$_SERVER</p>
+                <p class="_GET">$_GET</p>
+                <p class="_POST">$_POST</p>
+                <p class="_REQUEST">$_REQUEST</p>
+            </div>
+            <p class="cookies">Cookies <i class="fas fa-chevron-circle-down"></i></p>
+            <div class="cookie_section">
+                <p class="setcookie">setcookie()</p>
+                <p class="delete_cookie">Delete Cookie</p>
+            </div>
+            <p class="_SESSION">$_SESSION <i class="fas fa-chevron-circle-down"></i></p>
+            <div class="session_section">
+                <p class="session_start">session_start()</p>
+                <p class="set_edit">Set & Edit session</p>
+                <p class="destroy_session">Destroy Session</p>
+            </div>
+            <p class="misc_functions">Misc Functions <i class="fas fa-chevron-circle-down"></i></p>
+            <div class="misc_section">
+                <p class="sleep">sleep()</p>
+                <p class="exit">exit()</p>
+                <p class="uniqid">uniqid()</p>
+            </div>
+            <p class="filters">Filters <i class="fas fa-chevron-circle-down"></i></p>
+            <div class="filters_section">
+                <p class="filter_var">filter_var()</p>
+            </div>
+
+            <p class="dateTime">Date & Time <i class="fas fa-chevron-circle-down"></i></p>
+            <div class="date_section">
+                <p class="_time">time()</p>
+                <p class="_date">date()</p>
+                <p class="strtotime">strtotime()</p>
+            </div>
+            <p class="magicalConstants">Magical Constants</p>
+            <p class="output">Output</p>
+            <p class="variables">Variables</p>
+            <p class="comment">Comments</p>
+            <p class="concat">Concatenation</p>
+            <p class="dataTypes">Data Types</p>
+            <p class="constants">Constants</p>
+            <p class="ifStatement">if-statement</p>
+            <p class="operators">Arthmatic Operators</p>
+            <p class="comparision">Comparison Operators</p>
+            <p class="pre-post">increament / decreament</p>
+            <p class="logical">Logical Operators</p>
+            <p class="errorOperator">Error Control Operator</p>
+            <p class="loops">Loops</p>
+            <p class="php-functions">Functions</p>
+            <p class="ControlStructures">Control Structures</p>     
+
+            <p class="important">Important Notes</p>
+        </aside>
+        <main class="content">
+            <div class="page" id="strtotime">
+                <h3>strtotime()</h3>
+
+                <a href="https://www.w3schools.com/php/func_date_strtotime.asp" target="_blank"><h4>w3school</h4></a>
+                <a href="https://www.php.net/manual/en/function.strtotime.php" target="_blank"><h4>php Manual</h4></a>
+            </div>
+
+            <div class="page" id="_date">
+                <h4>date()</h4>formats a local date and time, and returns the formatted date string.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>date(format, timestamp)</code></pre>
+                </fieldset><br>
+                <div class="myTable">
+                    <span>Return Value</span><div>Returns a formatted date string on success. FALSE on failure + an E_WARNING</div>
+                </div>
+                <a href="https://www.w3schools.com/Php/func_date_date.asp" target="_blank">
+                    <h3>All possible date formats </h3>
+                </a><div class="spacer"></div>
+                <fieldset>
+                    <legend><h5>Example:</h5></legend>
+                    <pre><code>
+date_default_timezone_set('Asia/Baghdad');
+$aftersix = time() + (60 * 60 * 24 * 30 * 6);
+echo date("l jS \of F Y h:i:s", $aftersix);
+                    </code></pre>
+                </fieldset><br>
+            </div>
+            
+            <div class="page" id="_time">
+                <h4>time()</h4>Return current Unix timestamp. <br>Returns the current time measured in the number of seconds
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>time()</code></pre>
+                </fieldset><br>
+
+                <div class="myTable">
+                    <span>Return Value</span><div>Returns the current timestamp.</div>
+                </div>
+
+                <div class="spacer"></div>
+                <fieldset>
+                    <legend><h5>Example:</h5></legend>
+                    <pre><code>
+    $t=time();
+    echo($t);
+    echo(date("Y-m-d", $t));
+
+                        //1640837793
+                        //2021-12-30
+                    </code></pre>
+                </fieldset><br>
+            </div>
+
+            <div class="page" id="filter_var">
+                <h4>filter_var()</h4>The filter_var() function filters a variable with the specified filter.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>filter_var(var, filtername, options)</code></pre>
+                </fieldset><br>
+        
+                <div class="myTable">
+                    <span>var</span><div>Required. The variable to filter</div>
+                    <span>filtername</span><div>Optional. Specifies the ID or name of the filter to use. Default is FILTER_DEFAULT, which results in no filtering</div>
+                    <span>options</span><div>Optional. Specifies one or more flags/options to use. Check each filter for possible options and flags <br>تعتمد على نوع   الفلتر</div>
+                    <span><a target="_blank" href="https://www.php.net/manual/en/filter.filters.php">Types of filter</a></span><div>open the link and check the types</div>
+                    <span>Return Value</span><div>Returns the filtered data on success, FALSE on failure</div>
+                </div><div class="spacer"></div>
+
+                <a href="https://www.youtube.com/watch?v=8CdHO8AORI8&list=PLDoPjvoNmBAzH72MTPuAAaYfReraNlQgM&index=97" target="_blank">
+                    <q>See advanced filter validation:: using 'options'</q>
+                </a>
+                <fieldset>
+                    <legend><h5>Example:</h5></legend>
+                    <pre><code>
+    // Variable to check
+    $email = "john.doe@example.com";
+    
+    // Remove all illegal characters from email
+    $email = filter_var($email, FILTER_SANITIZE_EMAIL);
+    
+    // Validate e-mail
+    if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        echo("$email is a valid email address");
+    } else {
+        echo("$email is not a valid email address");
+    }
+                    </code></pre>
+                </fieldset><br>
+            </div>
+
+            <div class="page" id="filters">
+                <h4>Filters</h4>
+                This PHP filters is used to validate and filter data coming from insecure sources, like user input.
+                <div class="spacer"></div>
+                <h3>PHP filter functions</h3>
+                <table>
+                    <tbody><tr>
+                      <th>Function</th>
+                      <th>Description</th>
+                    </tr>
+                    <tr>
+                      <td>filter_has_var()</td>
+                      <td>Checks whether a variable of a specified input type exist</td>
+                    </tr>
+                    <tr>
+                      <td>filter_id()</td>
+                      <td>Returns the filter ID of a specified filter name</td>
+                    </tr>
+                    <tr>
+                      <td>filter_input()</td>
+                      <td>Gets an external variable (e.g. from form input) and optionally filters it</td>
+                    </tr>
+                    <tr>
+                      <td>filter_input_array()</td>
+                      <td>Gets external variables (e.g. from form input) and optionally filters them</td>
+                    </tr>
+                    <tr>
+                      <td>filter_list()</td>
+                      <td>Returns a list of all supported filter names</td>
+                    </tr>
+                    <tr>
+                      <td>filter_var()</td>
+                      <td>Filters a variable with a specified filter</td>
+                    </tr>
+                    <tr>
+                      <td>filter_var_array()</td>
+                      <td>Gets multiple variables and filter them</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="page" id="uniqid">
+                <h4>uniqid()</h4>generates a unique ID based on the microtime (the current time in microseconds).
+
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>uniqid( prefix, more_entropy )</code></pre>
+                </fieldset><br>
+
+                <div class="myTable">
+                    <span>prefix</span><div>Optional. Specifies a prefix to the unique ID (useful if two scripts generate ids at exactly the same microsecond)</div>
+                    <span>more_entropy</span><div>Optional. Specifies more entropy at the end of the return value. This will make the result more unique. When set to TRUE, the return string will be 23 characters. Default is FALSE, and the return string will be 13 characters long</div>
+                    <span>Return Value</span><div>Returns the unique identifier, as a string</div>
+                </div>
+            </div>
+
+            <div class="page" id="exit">
+                <h4>exit() & die()</h4>The exit construct ouputs a message and immediately terminates the execution of the current script. <br>
+                إخراج رسالة وإنهاء تنفيذ البرنامج النصي الحالي على الفور. <br>
+
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>exit ( string $status = ? )</code></pre>
+                </fieldset>
+                <i>If you use the $status as a string, the exit will output the $status before terminating the script.</i>
+                <div class="spacer"></div>
+        
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>exit ( int $status )</code></pre>
+                </fieldset>
+                <i>if you use the $status as an integer: The exit will use the $status as the exit status and won’t output the value.</i>
+                <div class="spacer"></div>
+                
+                <ul>
+                    <li>The valid range for the $status is from 0 to 255. PHP reserves the status 255. </li>
+                    <li>the status 0 indicates that the script is terminated successfully.</li>
+                    <li>Note that exit is not a function, but a language construct like if...else, foreach, etc. Therefore, you cannot call it using a variable function.</li>
+                    <li>The exit is functionally equivalent to die.</li>
+                </ul>
+                <div class="spacer"></div>
+
+                <fieldset>
+                    <legend><h5>Example:</h5></legend>
+                    <pre><code>
+    &lt;?php
+        $site = "http://www.w3schools.com/";
+        fopen($site,"r")
+        or exit("Unable to connect to $site");
+                    </code></pre>
+                </fieldset><br>
+                
+            </div>
+
+            <div class="page" id="sleep">
+                <h4>sleep()  &  usleep()</h4>Delays the program execution for the given number of seconds.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>sleep(int $seconds)</code></pre>
+                </fieldset><br>
+        
+                <div class="myTable">
+                    <span>$seconds</span><div title="pause, break, cut off">Halt time in seconds.</div>
+                    <span>Return Value</span><div>Returns zero on success, or false on error.</div>
+                    <span>Errors/Exceptions</span><div>If the specified number of seconds is negative, this function will generate a E_WARNING.</div>
+                </div>
+            
+            </div>
+
+            <div class="page" id="destroy_session">
+                <h4>Destroy Session</h4>
+                To remove all global session variables and destroy the session, <br>use <b class="viktig">session_unset()</b> and <b class="viktig">session_destroy()</b> :
+                <div class="spacer"></div>
+
+                <h5>Example</h5>
+                <iframe src="https://tryphp.w3schools.com/showphp.php?filename=demo_session5" frameborder="1" style="width: 80%; min-height: 800px;"></iframe>></iframe>
+            </div>
+
+            <div class="page" id="set_edit">
+                <h4>Set & Edit Session</h4>
+                We can use the following way to both add and edit a SESSION: <br>
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>
+                        $_SESSION["favcolor"] = "green";
+                        
+                        $_SESSION["favanimal"] = "cat";
+                    </code></pre>
+                </fieldset><br>
+            </div>
+
+            <div class="page" id="session_start">
+                <h4>session_start()</h4>creates a session or resumes the current one based on a session identifier passed via a GET or POST request, or passed via a cookie.
+                <div class="spacer"></div>
+                <h5>This function returns true if a session was successfully started, otherwise false.</h5>
+                <div class="spacer"></div>
+                <h3>Now, let's create a new page called "demo_session1.php". In this page, we start a new PHP session and set some session variables:</h3>
+                <iframe 
+                    src="https://tryphp.w3schools.com/showphp.php?filename=demo_session1" 
+                    frameborder="1"
+                    style="width: 80%; min-height: 400px;">
+                </iframe>
+            </div>
+
+            <div class="page" id="_SESSION">
+                <h4>$_SESSION</h4>
+                <ul>
+                    <li>An associative array containing session variables available to the current script.</li>
+                    <li>A session is a way to store information (in variables) to be used across multiple pages.</li>
+                    <li>Unlike a cookie, the information is not stored on the users computer.</li>
+                    <li>Session variables hold information about one single user (e.g. username, favorite color, etc), and are available to all pages in one application</li>
+                    <li>By default, session variables last until the user closes the browser.</li>
+                    <li>Session variables are set with the PHP global variable: $_SESSION.</li>
+                    <li>Session should be set and sent before the HTML code or before any output, this will minimize the chance of facing errors.</li>
+                </ul>
+                <q>If you need a permanent storage, you may want to store the data in a database.</q>
+            </div>
+
+            <div class="page" id="delete_cookie">
+                <h4>delete cookie</h4>
+                to delete a cookie, we can use setcookie() method by assigning the cookie's value to empty string, and make the expire date in the past.
+                <p>to do this operation, we have to know the name of the cookie</p>
+
+                <div class="spacer"></div>
+                <fieldset>
+                    <legend><h5>Example:</h5></legend>
+                    <pre><code>setcookie("background", "", time() - (60*60*24), "/")</code></pre>
+                </fieldset><br>
+        
+            </div>
+
+            <div class="page" id="setcookie">
+                <h4>setcookie()</h4>defines a cookie to be sent along with the rest of the HTTP headers.
+
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>setcookie(name, value, expire, path, domain, secure, httponly);</code></pre>
+                </fieldset><br>
+        
+                <div class="myTable">
+                    <span>name</span><div>Required. Specifies the name of the cookie</div>
+                    <span>value</span><div>Optional. Specifies the value of the cookie</div>
+                    <span>expire</span><div>Optional. Specifies when the cookie expires. <br><i >The value: time()+86400*30, will set the cookie to expire in 30 days. If this parameter is omitted or set to 0, the cookie will expire at the end of the session (when the browser closes). Default is 0</i></div>
+                    <span>path</span><div>Optional. Specifies the server path of the cookie.<br><i>If set to "/", the cookie will be available within the entire domain. If set to "/php/", the cookie will only be available within the php directory and all sub-directories of php. The default value is the current directory that the cookie is being set in</i></div>
+
+                    <span>domain</span><div>Optional. Specifies the domain name of the cookie. <br><i>To make the cookie available on all subdomains of example.com, set domain to "example.com". Setting it to www.example.com will make the cookie only available in the www subdomain</i> </div>
+                    <span>secure</span><div>Optional. Specifies whether or not the cookie should only be transmitted over a secure HTTPS connection. <br><i>TRUE indicates that the cookie will only be set if a secure connection exists. Default is FALSE</i></div>
+                    <span>httponly</span><div>Optional. If set to TRUE the cookie will be accessible only through the HTTP protocol (the cookie will not be accessible by scripting languages). This setting can help to reduce identity theft through XSS attacks. Default is FALSE</div>
+                </div>
+
+                <ul>
+                    <li>Return Value: TRUE on success. FALSE on failure</li>
+                    <li>Every cookie we create goes to an array called $_COOKIE, as one of its elements.</li>
+                </ul>
+
+                <fieldset>
+                    <legend><h5>Example:</h5></legend>
+                    <pre><code>setcookie("Hamada", "Qatqoot", time() + 3600 + 24, "/","localhost", TRUE, TRUE);</code></pre>
+                </fieldset><br>
+        
+
+            </div>
+
+            <div class="page" id="cookies">
+                <h4>Cookies</h4>
+                <ul>
+                    <li>A cookie is often used to identify a user.</li>
+                    <li>A cookie is a small file that the server embeds on the user's computer. <br><i> هو فايل صغير يقوم السيرفر بتضمينه في حاسوب المستخدم</i></li>
+                    <li>Each time the same computer requests a page with a browser, it will send the cookie too.</li>
+                    <li>With PHP, you can both create and retrieve cookie values.</li>
+                </ul><div class="spacer"></div>
+
+                <p style="color: tan;">The name of the cookie is automatically assigned to a variable of the same name. For example, if a cookie was sent with the name "user", a variable is automatically created called $user, containing the cookie value.</p>
+
+                <div class="spacer"></div>
+                <h5>See my example called 'set-cookie' in my php folder</h5>
+            </div>
+
+            <div class="page" id="_REQUEST">
+                <h4>$_REQUEST</h4>is used to collect data after submitting an HTML form. <br>An associative array that by default contains the contents of $_GET, $_POST and $_COOKIE.
+                <div class="spacer"></div>
+                <h5>Example:</h5>
+                <iframe 
+                    src="https://tryphp.w3schools.com/showphp.php?filename=demo_global_request" 
+                    frameborder="1"
+                    style="width: 80%; min-height: 400px;"
+                ></iframe>
+
+            </div>
+
+            <div class="page" id="_POST">
+                <h4>_POST</h4>HTTP POST variables. <br>is used to collect form data after submitting an HTML form with method="post". $_POST is also widely used to pass variables.
+                <h5>Example:</h5>
+                <iframe 
+                    src="https://tryphp.w3schools.com/showphp.php?filename=demo_global_post" 
+                    frameborder="1"
+                    style="width: 80%; min-height: 400px;"
+                ></iframe>
+            </div>
+
+            <div class="page" id="_GET">
+                <h4>_GET</h4>HTTP GET variables. <br>An associative array of variables passed to the current script via the URL parameters (aka. query string).
+                <h5>See Example "GET request" in my php folder</h5>
+            </div>
+
+            <div class="page" id="_server">
+                <h4>$_SERVER</h4>
+                is an array containing information such as headers, paths, and script locations. The entries in this array are created by the web server. There is no guarantee that every web server will provide any of these; servers may omit some, or provide others not listed here. <br>
+
+                <h3>elements in $_SERVER:</h3>
+                <h5>افتح الرابط اللي جوه حته تشوف العناصر الموجوده داخل مصفوفة السيرفر هذي</h5>
+
+
+                <div class="spacer"></div><a href="https://www.php.net/manual/en/reserved.variables.server.php" target="_blank">Read more</a>
+            </div>
+
+            <div class="page" id="GLOBALS">
+                <h4>$GLOBALS</h4>References all variables available in global scope. <div class="spacer"></div>
+                <h3>Calling global variable called 'name' inside a local block:</h3>
+                <fieldset>
+                    <pre><code>echo $GLOBALS["name"];</code></pre>
+                </fieldset><br>
+
+                <h3>Setting global variable called 'name' inside a local block:</h3>
+                <fieldset>
+                    <pre><code>$GLOBALS["name"] = "Ahmed";</code></pre>
+                </fieldset><br>
+            </div>
+
+            <div class="page" id="super_globals">
+                <h2>Super Globals</h2>
+                <h4>Built-in variables that are always available in all scopes.</h4>
+                These superglobal variables are:
+                <ul>
+                    <li>$GLOBALS</li>
+                    <li>$_SERVER</li>
+                    <li>$_GET</li>
+                    <li>$_POST</li>
+                    <li>$_FILES</li>
+                    <li>$_COOKIE</li>
+                    <li>$_SESSION</li>
+                    <li>$_REQUEST</li>
+                    <li>$_ENV</li>
+                </ul>
+            </div>
+
+            <div class="page" id="fclose">
+                <h4>fclose()</h4>Closes an open file pointer <br> تسد الفايل اللي سويناله ئف ئوبن وخليناه مستعد للهاندل
+                <br><q>The file must have been opened by fopen() or fsockopen().</q>
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>fclose(resource $stream | handeled-file): bool</code></pre>
+                </fieldset><br>
+        
+                <div class="myTable">
+                    <span>Return Value</span><div>TRUE on success, FALSE on failure</div>
+                </div>
+            </div>
+
+            <div class="page" id="fseek">
+                <h4>fseek()</h4>Seeks on a file pointer <br>فنكشت تحط بوينتر الكتابه او التعديل على ئوفسيت معين 
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>fseek(handeled-file, offset, whence)</code></pre>
+                </fieldset><br>
+        
+                <div class="myTable">
+                    <span>handeled-file <br>stream <br>opened-file <br>resource</span><div>A file system pointer resource that is typically created using fopen().</div>
+                    <span>offset</span><div>Required. Specifies the new position (measured in bytes from the beginning of the file).</div>
+                    <span>whence</span><div>
+                        Optional. Possible values:
+                        <ul>
+                            <li>SEEK_SET - Set position equal to offset. Default</li>
+                            <li>SEEK_CUR - Set position to current location plus offset <br>يعني يحسب من عملية السيك السابقه</li>
+                            <li>SEEK_END - Set position to EOF plus offset (to move  to a position before EOF, the offset must be a negative value)</li>
+                         </ul>
+                    </div>
+                    <span>Return Value</span><div>0 on success, otherwise -1</div>
+                </div>
+                <div style="direction: rtl;">
+                    <h3>ملاحظه</h3>    
+                    <q>السيك يشتغل وره عملية الـ ()fopen وميصير يشتغل وحده ,, كما في المثال التالي </q> 
+                </div>
+                   
+                <fieldset>
+                    <legend><h5>Example:</h5></legend>
+                    <pre><code>
+    $file = fopen("test.txt","r");
+    // Read first line
+
+    echo fgets($file);
+    // Move back to beginning of file
+
+    fseek($file,0);
+    fclose($file);
+                    </code></pre>
+                </fieldset><br>
+            </div>
+            
+            <div class="page" id="fwrite">
+                <h4>fwrite()</h4>writes the contents of data to the file stream pointed to by stream.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>fwrite(resource $stream, string $data, ?int $length = null)</code></pre>
+                </fieldset><br>
+                <div class="myTable">
+                    <span>stream</span><div>A file system pointer resource that is typically created using fopen().</div>
+                    <span>data</span><div>The string that is to be written.</div>
+                    <span>length</span><div>If length is an int, writing will stop after length bytes have been written or the end of data is reached, whichever comes first.</div>
+                    <span>Return value</span><div>returns the number of bytes written, or false on error.</div>
+                </div>        
+            </div>
+
+            <div class="page" id="fread">
+                <h4>fread()</h4>reads from an open file. <br>The function will stop at the end of the file or when it reaches the specified length, whichever comes first.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>fread(resource $stream, int $length)</code></pre>
+                </fieldset><br>
+        
+                <div class="myTable">
+                    <span>$stream</span><div>Required. Specifies the open file to read from</div>
+                    <span>$length</span><div>Required. Specifies the maximum number of bytes to read.</div>
+                    <span>Return Value</span><div>The read string, FALSE on failure.</div>
+                </div><div class="spacer"></div>
+
+                <ul style="direction: rtl;">
+                    <li> هاي الفنكشن وظيفتها تجيبلك محتوى الفايل النصي بس لازم قبلها تكون مجهز الفايل للستريم عن طريق الفنكشن ()fopen </li>
+                    <li>الـ لينكث هنا ينحسب البايتات</li>
+                    <li>الفنكشن ()filesize تجيب حجم الفايل بالبايتات جاهز, هاي في حال منعرف شكد حجم الفايل بالبايتات</li>
+                    <li>الحرف ينحسب بـ بايت -- يعني الكلمه ام 5 حروف حجمها يصير 5 بايتات</li>
+                </ul><div class="spacer"></div>
+                <fieldset>
+                    <legend><h5>Example:</h5></legend>
+                    <pre><code>
+                        $file = fopen("test.txt","r");
+                        fread( $file, filesize("test.txt") );
+                    </code></pre>
+                </fieldset><br>
+            </div>
+
+            <div class="page" id="fopen">
+                <h4>fopen()</h4>function opens a file or URL.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>fopen(filename, mode, include_path, context)</code></pre>
+                </fieldset><br>
+        
+                <div class="myTable">
+                    <span>filename</span><div>Required. Specifies the file or URL to open.</div>
+                    <span>mode</span>
+                    <div>Required. Specifies the type of access you require to the file/stream. <br>Possible values:
+                        <ul style="color: tan;">
+                            <li>"r" - Read only. Starts at the beginning of the file <i>file must exist</i></li>
+                            <li>
+                                "r+" - Read/Write. Starts at the beginning of the file  <i>file must exist</i><br>
+                                <div  style="direction:rtl">
+                                    <q style="color: tan; border: none;">تعمل مثل عمل زر insert اللي بالكيبورد -- كلما تكتب حرف جديد تكتب وياك من البدايه وتشيل الموجود سابقا</q>
+                                </div>
+                            </li>
+                            <li>"w" - Write only. Opens and clear the file; or creates a new  file if it doesn't exist. 
+                            Place file pointer at the beginning of the file</li>
+                            <li>"w+" - Read/Write. Opens and clear the file; or creates a new  file if it doesn't exist. 
+                            Place file pointer at the beginning of the file</li>
+                            <li>"a" - Write only. Opens and writes to the end of the file or 
+                            creates a new file if it doesn't exist</li>
+                            <li>"a+" - Read/Write. Preserves file content by writing to the 
+                            end of the file</li>
+                            <li>"x" - Write only. Creates a new file. Returns FALSE and an 
+                            error if file already exists</li>
+                            <li>"x+" - Read/Write. Creates a new file. Returns FALSE and an 
+                            error if file already exists</li>
+                            <li>"c" - Write only. Opens the file; or creates a new  file if it doesn't exist. 
+                            Place file pointer at the beginning of the file</li>
+                            <li>"c+" - Read/Write. Opens the file; or creates a new  file if it doesn't exist. 
+                            Place file pointer at the beginning of the file</li>
+                            <li>"e" - Only available in PHP compiled on POSIX.1-2008 conform systems. </li>
+                         </ul>
+                    </div>
+        
+                    <span>include_path</span><div>...</div>
+                    <span>context</span><div>...</div>
+                    <span>return value</span><div>A file pointer resource on success, FALSE and an error on failure. You can hide the error by adding an "@" in front of the function name.</div>
+                </div>
+                
+            </div>
+
+            <div class="page" id="scandir">
+                <h4>scandir()</h4>function returns an array of files and directories of the specified directory.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>scandir(directory, sorting_order, context)</code></pre>
+                </fieldset><br>
+        
+                <div class="myTable">
+                    <span>directory</span><div>Required. Specifies the directory to be scanned.</div>
+                    <span>sorting_order</span><div>Optional. Specifies the sorting order. Default sort order is alphabetical in ascending order (0). Set to SCANDIR_SORT_DESCENDING or 1 to sort in alphabetical descending order, or SCANDIR_SORT_NONE to return the result unsorted </div>
+                    <span>context</span><div>...</div>
+                    <span>Return value</span><div>An array of files and directories on success, FALSE on failure.</div>
+                    <span>warning</span><div>an E_WARNING if directory is not a directory.</div>
+                </div>       
+            </div>
+
+            <div class="page" id="unlink">
+                <h4>unlink()</h4>deletes a file.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>unlink(filename, context)</code></pre>
+                </fieldset><br>
+        
+                <div class="myTable">
+                    <span>filename</span><div>Required. Specifies the path to the file to delete.</div>
+                    <span>context</span><div>...</div>
+                    <span>return</span><div>TRUE on success, FALSE on failure</div>
+                </div>
+        
+                <ul>
+                    <li>An E_WARNING level error will be generated on failure.</li>
+                    <li>the file should be writable to be deleted, otherwise we can't delete it.</li>
+                </ul>
+            </div>
+
+            <div class="page" id="pathinfo">
+                <h4>pathinfo()</h4>Returns information about a file path.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>pathinfo(path, options)</code></pre>
+                </fieldset><br>
+        
+                <div class="myTable">
+                    <span>path</span><div>Required. Specifies the path to be checked</div>
+                    <span>options</span>
+                    <div>
+                        Optional. Specifies which array element to return. If not specified, it returns all elements. <br>
+                        Possible values:
+                        <ul style="border: none;">
+                            <li style="border: none;">PATHINFO_DIRNAME - return only dirname</li>
+                            <li style="border: none;">PATHINFO_BASENAME - return only basename</li>
+                            <li style="border: none;">PATHINFO_EXTENSION - return only extension</li>
+                            <li style="border: none;">PATHINFO_FILENAME - return only filename</li>
+                        </ul>
+                    </div>
+                    <span style="color: hotpink;">return</span>
+                    <div>
+                        If the option parameter is omitted, it returns an associative array with dirname, basename, extension, and filename. If the option parameter is specified, it returns a string with the requested element. FALSE on failure
+                    </div>
+                </div>
+            </div>
+
+            <div class="page" id="rename">
+                <h4>rename()</h4>Renames a file or directory. <br> can be used for moving file or directory also.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>rename( old, new, context )</code></pre>
+                </fieldset><br>
+        
+                <div class="myTable">
+                    <span>old</span><div>Required. Specifies the file or directory to be renamed or moved.</div>
+                    <span>new</span><div>Required. Specifies the new name for the file or directory</div>
+                    <span>context</span><div>...</div>
+                    <span>return</span><div>TRUE on success, FALSE on failure</div>
+                </div>
+
+                <fieldset>
+                    <legend><h5>Example:</h5></legend>
+                    <pre><code>
+rename("images","pictures");
+rename("/test/file1.txt","/home/docs/my_file.txt");
+                    </code></pre>
+                </fieldset><br>
+            </div>
+
+            <div class="page" id="copy">
+                <h4>copy()</h4>Copies files.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>copy( from_file, to_file, context )</code></pre>
+                </fieldset><br>
+        
+                <div class="myTable">
+                    <span>from_file</span><div>Required. Specifies the path to the file to copy from</div>
+                    <span>to_file</span><div>Required. Specifies the path to the file to copy to</div>
+                    <span>context</span><div>...</div>
+                    <span>return</span><div>TRUE on success, FALSE on failure</div>
+                </div>
+                <fieldset>
+                    <legend><h5>Example:</h5></legend>
+                    <pre><code>echo copy("source.txt","target.txt");</code></pre>
+                </fieldset><br>
+            </div>
+
+            <div class="page" id="file_get_contents">
+                <h4>file_get_contents()</h4>Reads entire file into a string.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>file_get_contents(path, include_path, context, start, max_length)</code></pre>
+                </fieldset><br>
+        
+                <div class="myTable">
+                    <span>path</span><div>Required. Specifies the path to the file or link to read</div>
+                    <span>include_path</span><div>...</div>
+                    <span>context</span><div>...</div>
+                    <span>start</span><div>Optional. Specifies where in the file to start reading. Negative values count from the end of the file</div>
+                    <span>max_length</span><div>Optional. Specifies the maximum length of data read. Default is read to EOF</div>
+                    <span>return value</span><div>retern the entire file in a string, FALSE on failure</div>
+                </div>
+            </div>
+
+            <div class="page" id="file_put_contents">
+                <h4>file_put_contents()</h4>The file_put_contents() writes data to a file.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>file_put_contents( filename, data, mode, context )</code></pre>
+                </fieldset><br>
+        
+                <div class="myTable">
+                    <span>filename</span><div>Required. Specifies the path to the file to write to. If the file does not exist, this function will create one</div>
+                    <span>data</span><div>Required. The data to write to the file. Can be a string, array, or a data stream</div>
+                    <span>mode</span>
+                    <div>
+                        Optional. Specifies how to open/write to the file. Possible values:
+                        <ul>
+                            <li>FILE_USE_INCLUDE_PATH - search for filename in the include directory</li>
+                            <li>FILE_APPEND - if file already exists, append the data to it - instead of overwriting it</li>
+                            <li>LOCK_EX - Put an exclusive lock on the file while writing to it</li>
+                        </ul>                    
+                    </div>
+                    <span>return</span><div>The number of bytes written into the file on success, FALSE on failure</div>
+
+                    <span>context</span><div>راح ادرسها بعدين</div>
+                </div>
+        
+                <p>This function follows these rules when accessing a file:</p>
+                <ul>
+                    <li>Write the data into the file</li>
+                    <li>Create the file if it does not exist.</li>
+                    <li>Use FILE_APPEND to avoid deleting the existing content of the file.</li>
+                    <li>If FILE_APPEND is set, move to the end of the file. Otherwise, clear the file content <br>في حال وضعنا هذه الخاصيه ك باراميتر ثالث فهذا يعني انه لا يجب حذف المحتوى السابق وبالتالي اضافة المحتوى الجديد في نهاية المحتوى السابق</li>
+                    <li>Lock the file if LOCK_EX is set <br> حته نمنع المطورين الاخرين من التعديل على الفايل وتجنب حدوث الكونفلكت</li>
+                </ul>
+        
+            </div>
+
+            <div class="page" id="basename">
+                <h4>basename()</h4>function returns the filename from a path.        
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>basename( path, suffix )</code></pre>
+                </fieldset><br>
+        
+                <div class="myTable">
+                    <span>path</span><div>Required. Specifies a file path</div>
+                    <span>suffix</span><div>Optional. A file extension. If the filename has this file extension, the file extension will be cut off</div>
+                    <span>Return</span><div>The filename of the specified path</div>
+                </div>
+        
+                <ul>
+                    <li>On Windows, both slash (/) and backslash (\) are used as directory separator character. In other environments, it is the forward slash (/).</li>
+                </ul><div class="spacer"></div>
+
+                <fieldset>
+                    <legend><h5>Example:</h5></legend>
+                    <pre><code>echo basename(__FILE__);
+echo basename(__FILE__, '.php');
+                    </code></pre>
+                </fieldset><br>
+            </div>
+
+            <div class="page" id="dirname">
+                <h4>dirname()</h4>Returns a parent directory's path. <br>
+                هاي الفنكشن ترجعلنه المسار مال الفولدر اللي بيه الفايل الحالي مال بيئجبي اللي دنشتغل بيه
+        
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>dirname(string $path, int $levels = 1)</code></pre>
+                </fieldset><br>
+        
+                <div class="myTable">
+                    <span>$path</span><div>Required. Specifies a path to check</div>
+                    <span>levels</span><div> An integer that specifies the number of parent directories to go up. Default is 1 <br>This must be an integer greater than 0.</div>
+                </div>
+                <fieldset>
+                    <legend><h5>Example:</h5></legend>
+                    <pre><code>echo dirname("/usr/local/lib", 2);</code></pre>
+                    <q>/user</q> <div class="spacer"></div><hr><br>
+                    <pre><code>echo dirname(__FILE__);</code></pre>
+                    <q>the path of the folder of the current file.</q>
+                </fieldset><br>     
+            </div>
+
+            <div class="page" id="magicalConstants">
+                <div class="myTable">
+                    <span>__LINE__</span><div>returns the current line number of the file</div>
+                    <span>__FILE__</span><div> returns full path and name of the PHP file that's being executed. If used inside an include, the name of the included file is returned.</div>
+                    <span>__DIR__</span><div>returns the directory of the file. If used inside an include, the directory of the included file is returned.</div>
+                </div>
+            </div>
+
+            <div class="page" id="directories">
+                <h4>mkdir()</h4>create directiry.
+
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>mkdir( $name or both path and name )</code></pre>
+                </fieldset><br>
+        
+                <div class="myTable">
+                    <span>return</span><div>Returns true on success or false on failure.</div>
+                    <span>Errors/Exceptions</span><div>Emits an E_WARNING level error if the directory already exists. <br>Emits an E_WARNING level error if the relevant permissions prevent creating the directory.</div>
+                </div>
+                <hr><br>
+
+                <h4>rmdir()</h4>removes directiry.
+
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>rmdir( $name or both path and name )</code></pre>
+                </fieldset><br>
+        
+                <div class="myTable">
+                    <span>return</span><div>Returns true on success or false on failure.</div>
+                </div><br>
+                <ul><li>the folder should be empty so we can delete it.</li></ul><br>
+                <hr><br>
+
+                <h4>is_dir()</h4>Tells whether the filename is a directory.
+
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>is_dir( $filename )</code></pre>
+                </fieldset><br>
+        
+                <div class="myTable">
+                    <span>$filename</span><div>the path to the file.</div>
+                    <span>return</span><div>Returns true if the filename exists and is a directory, false otherwise.</div>
+                    <span>Errors/Exceptions</span><div>Upon failure, an E_WARNING is emitted.</div>
+                </div>
+
+            </div>
+
+            <div class="page" id="is_writable">
+                <h4>is_writable()</h4>Tells whether the filename is writable.
+        
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>is_writable(string $filename)</code></pre>
+                </fieldset><br>
+        
+                <div class="myTable">
+                    <span>filename</span><div>The filename being checked.</div>
+                    <span>Errors/Exceptions</span><div>Upon failure, an E_WARNING is emitted.</div>
+                </div>
+        
+                <ul>
+                    <li>Returns true if the filename exists and is writable.</li>
+                    <li>The filename argument may be a directory name allowing you to check if a directory is writable.</li>
+                </ul><div class="spacer"></div>
+                <a href="https://www.php.net/manual/en/function.is-writable.php">Source</a>
+            </div>
+
+            <div class="page" id="file_put_contents">
+                <h4>file_put_contents()</h4>Write data to a file.
+        
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>
+                    file_put_contents(
+                        string $filename,
+                        mixed $data,
+                        int $flags = 0,
+                        resource $context = ?
+                    )</code></pre>
+                </fieldset><br>
+        
+                <div class="myTable">
+                    <span>filename</span><div>Path to the file where to write the data.</div>
+                    <span>data</span><div>The data to write. Can be either a string, an array or a stream resource.</div>
+                    <span>flags</span><div>The value of flags can be any combination of the following flags, joined with the binary OR (|) operator.</div>
+                </div>
+                <ul>
+                    <li>If filename does not exist, the file is created. Otherwise, the existing file is overwritten, unless the FILE_APPEND flag is set.</li>
+                    <li>You can also specify the data parameter as a single dimension array. This is equivalent to file_put_contents($filename, implode('', $array)).</li>
+                </ul>
+        
+            </div>
+
+            <div class="page" id="file_exists">
+                <h4>file_exists()</h4>Checks whether a file or directory exists
+        
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>file_exists( $filename  or file-direction)</code></pre>
+                </fieldset><br>
+        
+                <div class="myTable">
+                    <span>filename</span><div>Path to the file or directory.</div>
+                    <span>return</span><div>Returns true if the file or directory specified by filename exists; false otherwise.</div>
+                    <span>Errors/Exceptions</span><div>Upon failure, an E_WARNING is emitted.</div>
+                </div>
+            </div>
+
+            <div class="page" id="fileSystem">
+                <a href="https://www.php.net/manual/en/book.filesystem.php">Official PHP file system reference</a>
+            </div>
+
+            <div class="page" id="ControlStructures">
+                <h4>include</h4>The include expression includes and evaluates the specified file.
+                <p style="color: dimgray;">When a file is included, the code it contains inherits the variable scope of the line on which the include occurs. Any variables available at that line in the calling file will be available within the called file, from that point forward. However, all functions and classes defined in the included file have the global scope.</p>
+                <br>
+                <q><a href="https://www.php.net/manual/en/function.include.php">Read more about 'include'</a></q>
+                <div class="spacer"></div>
+
+                <h4>require</h4>require is identical to include except upon failure it will also produce a fatal E_COMPILE_ERROR level error. In other words, it will stop the script whereas include only emits a warning (E_WARNING) which allows the script to continue. <br>
+                <q><a href="https://www.php.net/manual/en/function.require.php">Read more about 'require'</a></q>
+                <div class="spacer"></div>
+
+                <h4>switch</h4>
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>
+    switch ($i) {
+        case 0:
+            echo "i equals 0";
+            break;
+        case 1:
+            echo "i equals 1";
+            break;
+        case 2:
+            echo "i equals 2";
+            break;
+        default:
+        echo "i is not equal to 0, 1 or 2";
+    }
+                    </code></pre>
+                </fieldset><br>
+                <p>It's possible to use a semicolon instead of a colon after a case like:</p>
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>
+    switch($beer) {
+        case 'tuborg';
+        case 'carlsberg';
+        case 'heineken';
+            echo 'Good choice';
+            break;
+        default;
+            echo 'Please make a new selection...';
+            break;
+    }
+                    </code></pre>
+                </fieldset><br>
+            </div>
+
+            <div class="page" id="substr_compare">
+                <h4 title="haystack == كومة قش">substr_compare()</h4>compares haystack from position offset with needle up to length characters.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>
+                    substr_compare(
+                        string1 $haystack,
+                        string2 $needle,
+                        int $offset | startIndex,
+                        ?int $length = null,
+                        bool $case_insensitive = false
+                    )</code></pre>
+                </fieldset><br>
+
+                <div class="myTable">
+                    <span title="كومة القش">haystack</span><div>The main string being compared.</div>
+                    <span>needle</span><div>the secondary string being compared.</div>
+                    <span>offset</span><div>The start position for the comparison. If negative, it starts counting from the end of the string.</div>
+                    <span>length</span><div>The length of the comparison. The default value is the largest of the length of the needle compared to the length of haystack minus the offset.</div>
+                    <span>case_insensitive</span><div>If case_insensitive is true, comparison is case insensitive.</div>
+                </div>
+
+                <div class="spacer"></div>
+                <h3>Return value</h3>
+                <p>Returns < 0 if haystack from position offset is less than needle, > 0 if it is greater than needle, and 0 if they are equal. If offset is equal to (prior to PHP 7.2.18, 7.3.5) or greater than the length of haystack, or the length is set and is less than 0, substr_compare() prints a warning and returns false.
+                </p>
+            </div>
+
+            <div class="page" id="substr_count">
+                <h4>substr_count()</h4>returns the number of times the needle substring occurs in the haystack string. Please note that needle is case sensitive.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>
+                    substr_count(
+                        string $haystack,
+                        string $needle,
+                        int $offset(startIndex) = 0,
+                        ?int $length = null
+                    )</code></pre>
+                </fieldset><br>
+                <ul>
+                    <li>needle is case sensitive.</li>
+                    <li>This function returns an int.</li>
+                </ul>
+            </div>
+
+            <div class="page" id="substr">
+                <h4>substr()</h4>Returns the piece of string specified by the startIndex and length parameters.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>substr( $string, int $startIndex, ?int $length )</code></pre>
+                </fieldset><br>
+                <ul>
+                    <li>If startIndex is negative, the returned string will start at the offset'th character from the end of string.</li>
+                    <li>If string is less than offset characters long, an empty string will be returned.</li>
+                </ul><div class="spacer"></div>
+                <q><a href="https://www.php.net/manual/en/function.substr.php">More Details</a></q>
+            </div>
+
+            <div class="page" id="strrev">
+                <h4>strrev()</h4>  reverses a string.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>strrev(string)</code></pre>
+                </fieldset><br>
+                <ul><li>Returns the reversed string</li></ul>
+            </div>
+
+            <div class="page" id="strcmp">
+                <h4>strcmp()</h4>function compares two strings.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>strcmp( string1, string2 )</code></pre>
+                </fieldset><br>
+                <h4 style="color: plum;">This function is similar to the strncmp() function, with the difference that you can specify the number of characters from each string to be used in the comparison with strncmp().</h4>
+            </div>
+
+            <div class="page" id="strstr">
+                <h4>strstr()</h4>searches for the first occurrence of a string inside another string.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>strstr( $string, $searchValue, before_search)</code></pre>
+                </fieldset><br>
+                <ul>
+                    <li>This functions is case-sensative. use stristr() for case-insensative.</li>
+                    <li>هي عباره عن فنكشن تبحث عن نص معين داخل نص اخر,, وعندما تجد النص المنشود تجلبه وتجلب كل النص الذي بعده الى النهايه</li>
+                    <li>الباراميتر الثالث اختياري, والقيمه الافتراضيه له هي فولس,,</li>
+                    <li>عندما يكون الباراميتر الثالث فولس فهذا يعني جلب النص المنشود والنص اللذي يليه الى النهايه</li>
+                    <li>اما اذا كان الباراميتر الثالث ترو فهذا يعني جلب كل النص الذي قبل النص المنشود ولا يدخل النص المنشود ضمن النتيجه</li>
+                </ul>
+                <p>Related Functions:</p>
+                <ul>
+                    <li>stristr() - case-insensative,, searches for the first occurrence of a string inside another string.</li>
+                    <li>strchr() - exactly same as strstr()</li>
+                </ul>
+            </div>
+
+            <div class="page" id="strpos">
+                <h4>strpos() &emsp; stripos() &emsp; strrpos() &emsp; strripos()</h4> <br> finds the position of the first occurrence of a string inside another string.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>strpos( $string, find, startIndex)</code></pre>
+                </fieldset><br>
+                <ul>
+                    <li>The strpos() function is case-sensitive.</li>
+                    <li>$string == Required. Specifies the string to search.</li>
+                    <li>find == Required. Specifies the string to find.</li>
+                    <li>startIndex == Optional. Specifies where to begin the search. If start is a negative number, it counts from the end of the string.</li>
+                </ul><div class="spacer"></div>
+                <p>Related Functions:</p>
+                <ul>
+                    <li>strrpos() - Finds the position of the last occurrence of a string inside another string (case-sensitive)</li>
+                    <li>stripos() - Finds the position of the first occurrence of a string inside another string (case-insensitive)</li>
+                    <li>strripos() - Finds the position of the last occurrence of a string inside another string (case-insensitive)</li>
+                </ul>
+            </div>
+
+            <div class="page" id="nl2br">
+                <h4>nl2br()</h4>inserts HTML line breaks ( &lt;br&gt; or &lt;br /&gt; ) in front of each newline (\\n) in a string.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>nl2br(string,xhtml)</code></pre>
+                </fieldset><br>
+                <ul>
+                    <li>xhtml == Optional. A boolean value that indicates whether or not to use XHTML compatible line breaks:</li>
+                    <ul><ul>
+                        <li>TRUE- Default. Inserts &lt;br /&gt;</li>
+                        <li>FALSE- Inserts &lt;br&gt;</li>
+                    </ul></ul>
+                </ul>
+            </div>
+
+            <div class="page" id="parseStr">
+                <h4>parse_str()</h4>parses a query string into variables.
+                <p>هي عباره عن فنكشن تحلل الكويري سترنغز وتقسمه الى الفاريابلز الموجوده بيه</p>
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>parse_str(string,array)</code></pre>
+                </fieldset><br>
+                <ul>
+                    <li> If the array parameter is not set, variables set by this function will overwrite existing variables of the same name.</li>
+                    <li>string == Required. Specifies the string to parse.</li>
+                    <li>array == Optional (Required from PHP 7.2). Specifies the name of an array to store the variables. This parameter indicates that the variables will be stored in an array.</li>
+                    <li>الفنكشن هاي تجزء الكويري سترنغ وتسوي المتغيرات والقيم اللي بيه تخزنهن داخل مصفوفه</li>
+                </ul>
+            </div>
+
+            <div class="page" id="strWordCount">
+                <h4>str_word_count()</h4>counts the number of words in a string.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>str_word_count( $string, return, characters )</code></pre>
+                </fieldset><br>
+                <ul>
+                    <li>return == Optional. Specifies the return value of the str_word_count() function.</li>
+                    <p>Possible values:</p>
+                    <ul>
+                        <li>0 - Default. Returns the number of words found</li>
+                        <li>1 - Returns an array with the words from the string</li>
+                        <li>2 - Returns an array where the key is the position of the word in  the string, and value is the actual word</li>
+                    </ul>
+                    <li>characters == Optional. Specifies special characters to be considered as words.</li>
+                </ul><div class="spacer"></div>
+                <q>Returns a number or an array, depending on the chosen return parameter</q>
+                <div class="spacer"></div>
+                <a href="https://www.w3schools.com/php/phptryit.asp?filename=tryphp_func_string_str_word_count2">Example</a>
+            </div>
+
+            <div class="page" id="trim">
+                <h4>trim()</h4>removes whitespace and other predefined characters from both sides of a string.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>trim( $string, $characters )</code></pre>
+                </fieldset><br><br>
+                <ul>
+                    <li>$characters = " \n\r\t\v\0" by default</li>
+                    <li>بالنسبه للباراميتر الثاني اذا محطينه قيمه اله فراح ياخذ القيمه الافتراضيه واللي هي بالنقطه اعلاه,, او نكدر نحط رموز او حروف معينه حسب رغبتنا ليتم تقليمها ويتجاهل تقليم الرموز في القيمه الافتراضيه لهذا الباراميتر</li>
+                    <li>اذا حددنه حروف او رموز للتقليم لازم يكونون باطراف النص,, لان ما راح يقلم من وسط النص</li>
+                </ul><div class="spacer"></div>
+                <h3>If no charachter has been specified, all of the following characters are removed:</h3>
+                <ul>
+                    <li>"\0" - NULL</li><li>"\t" - tab</li>
+                    <li>"\n" - new line</li>
+                    <li>"\x0B" - vertical tab</li>
+                    <li>"\r" - carriage return</li>
+                    <li>" " - ordinary white space</li>
+                </ul><div class="spacer"></div>
+                <p>Related funtions:</p>
+                <ol>
+                    <li><b style="font-family:monospace;">ltrim()</b> - Removes whitespace or other predefined characters from the left side of a string.</li>
+                    <li><b style="font-family:monospace;">rtrim()</b> - Removes whitespace or other predefined characters from the right side of a string.</li>
+                </ol><div class="spacer"></div>
+
+            </div>
+
+            <div class="page" id="ucwords">
+                <h4>ucwords()</h4>converts the first character of each word in a string to uppercase.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>ucwords(string)</code></pre>
+                </fieldset>
+            </div>
+
+            <div class="page" id="ucfirst">
+                <h4>ucfirst()</h4>converts only the first character of a string to uppercase.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>ucfirst(string)</code></pre>
+                </fieldset>
+            </div>
+
+            <div class="page" id="lcFirst">
+                <h4>lcfirst()</h4>converts only the first character of a string to lowercase.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>lcfirst(string)</code></pre>
+                </fieldset>
+            </div>
+
+            <div class="page" id="strtoUpper">
+                <h4>strtoupper()</h4>converts a string to uppercase
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>strtoupper(string)</code></pre>
+                </fieldset>
+            </div>
+
+            <div class="page" id="strtoLower">
+                <h4>strtolower()</h4>function converts a string to lowercase.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>strtolower(string)</code></pre>
+                </fieldset><br>
+            </div>
+
+            <div class="page" id="stripTags">
+                <h4>strip_tags()</h4>function strips(ignores) a string from HTML, XML, and PHP tags.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>strip_tags( string, allow )</code></pre>
+                </fieldset><br>
+
+                <ul>
+                    <li>allow:- Optional. Specifies allowable tags. These tags will not be removed</li>
+                    <li>Returns the stripped string.</li>
+                    <li>هاي الفنكشن تهمل تاكات الهتمل الموجوده بالنص وممكن نستثني احد او مجموعه من هاي التاغات عن طريق وضعهم بالبارميتر اللي اسمه اللاو</li>
+                </ul>
+                <fieldset>
+                    <legend><h5>Example:</h5></legend>
+                    <pre><code>strip_tags( $myString, allow )</code></pre>
+                </fieldset><br>
+            </div>
+
+            <div class="page" id="stripSlashes">
+                <h4>stripslashes()</h4>function removes backslashes added by the addslashes() function.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>stripslashes(string)</code></pre>
+                </fieldset><br>
+                <ul>
+                    <li>This function can be used to clean up data retrieved from a database or from an HTML form.</li>
+                    <li>Returns a string with backslashes stripped off</li>
+                    <li>تمسح الباكسلاشات اللي انظافن عالنص عن طريق الفنكشن ئاد سلاشز حته نكدر نعرض النص نظيف للمستخدم بفايل الهتمل</li>
+                </ul>
+            </div>
+
+            <div class="page" id="addSlashes">
+                <h4>addslashes()</h4>returns a string with backslashes in front of predefined characters.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>addslashes(string)</code></pre>
+                </fieldset><br>
+                <p>The predefined characters are:</p>
+                <ul>
+                    <li>single quote (')</li>
+                    <li>double quote (")</li>
+                    <li>backslash (\)</li>
+                    <li>NULL</li>
+                </ul><div class="spacer"></div>
+                <ul>
+                    <li>This function can be used to prepare a string for storage in a database and database queries.</li>
+                    <li>Returns the escaped string.</li>
+                    <li>
+                        هاي الفنكشن تفيد للتخلص من العلامات الغير مرغوب بها اللي يضعها المستخدم مثلا في النص عند تحويل هذا النص الى الداتابايز
+                    </li>
+                </ul>
+            </div>
+
+            <div class="page" id="strlen">
+                <h4>strlen()</h4>returns the length of a string.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>strlen(string)</code></pre>
+                </fieldset><br>
+            </div>
+
+            <div class="page" id="strShuffle">
+                <h4>str_shuffle()</h4>randomly shuffles all the characters of a string.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>str_shuffle(string)</code></pre>
+                </fieldset><br>
+                <ul>
+                    <li>Returns the shuffled string</li>
+                </ul>
+            </div>
+
+            <div class="page" id="strRepeat">
+                <h4>str_repeat()</h4>repeats a string a specified number of times.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>str_repeat( $string, int $times )</code></pre>
+                </fieldset><br>
+                <div class="myTable">
+                    <span>$string</span><div>The string to be repeated. REQUIRED</div>
+                    <span>$times</span><div>Number of time the string string should be repeated. REQUIRED</div>
+                </div>
+                <ul>
+                    <li>times has to be greater than or equal to 0. If the times is set to 0, the function will return an empty string.</li>
+                    <li>Returns the repeated string.</li>
+                </ul>
+            </div>
+
+            <div class="page" id="strReplace">
+                <h4>str_replace()</h4>replaces some characters with some other characters in a string.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>str_replace(find,replace,string,count)</code></pre>
+                </fieldset><br>
+                <div class="myTable">
+                    <span>Find</span><div>Required. Specifies the value to find</div>
+                    <span>Replace</span><div>Required. Specifies the value to replace the value in find</div>
+                    <span>String</span><div>Required. Specifies the string to be searched</div>
+                    <span>Count</span><div>Optional. A variable that counts the number of replacements</div>
+                </div><div class="spacer"></div>
+                <p>This function works by the following rules:</p>
+                <ul>
+                    <li>This function works on both strings and arrays.</li>
+                    <li>If the string to be searched is an array, it returns an array</li>
+                    <li>This function is case-sensitive. </li>
+                    <li>بهاي الفنكشن نكدر نبدل قطعه سترنغ بقطعه اخرى ونكدر نبدل مصفوفه من القطع بمصفوفه اخرى</li>
+                    <li>اذا جان عدد القطع الجديده اقل من عدد القطع المراد تبديلها فسوف يتم وضع مسافه بدل القطع القديمه</li>
+                </ul><div class="spacer"></div>
+
+
+                <a href="https://www.w3schools.com/php/func_string_str_replace.asp">Click here to see the rules of using str_replace()</a>
+            </div>
+
+            <div class="page" id="chunkSplit">
+                <h4>chunk_split()</h4>Split a string into smaller chunks
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>chunk_split( $string, int $length = 76, string $separator = "\r\n")</code></pre>
+                </fieldset><br>
+                <ul>
+                    <li>Can be used to split a string into smaller chunks.</li>
+                    <li>It inserts separator every length characters.</li>
+                    <li>$String == The string to be chunked.</li>
+                    <li>$length == The chunk length.</li>
+                    <li>Separator == A string that defines what to place at the end of each chunk. Default is \r\n</li>
+                    <li>Returns (string) the chunked string.</li>
+                    <li>This function does not alter the original string.</li>
+                </ul>
+                <fieldset>
+                    <legend><h5>Example:</h5></legend>
+                    <pre><code>$str = "Hello world!";
+echo chunk_split($str,6,"...");
+
+</code></pre>
+                </fieldset><br>
+                <em>output expected: Hello ...world!...</em>
+            </div>
+
+            <div class="page" id="strSplit">
+                <h4>str_split()</h4>Convert a string to an array.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>str_split(string $string, $length in int)</code></pre>
+                </fieldset><br>
+                <ul>
+                    <li>$length == Maximum length of the chunk.</li>
+                    <li>$length is optional and its default value is 1.</li>
+                    <li>هاي المثود تحول السترنغ الى مصفوفه ,, كل كاركتر من السترنغ يكون عنصر مستقل بالمصفوفه الجديده</li>
+                    <li>Return false, if length is less than 1.</li>
+                    <li>Return new array if everything is ok.</li>
+                </ul>
+            </div>
+
+            <div class="page" id="implode">
+                <h4>implode()</h4>Join array elements with a string.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>implode( $separator, $array )</code></pre>
+                </fieldset><br>
+                <ul>
+                    <li>The separator is Optional. Defaults to an empty string ("").</li>
+                    <li>Returns a string containing a string representation of all the array elements in the same order, with the separator string between each element.</li>
+                </ul>
+            </div>
+
+            <div class="page" id="explode">
+                <h4>explode()</h4>Split a string by a string.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>explode( $separator, $string, $limit )</code></pre>
+                </fieldset><br>
+                <ul>
+                    <li>the limit is optional.</li>
+                    <li>If limit is set and positive, the returned array will contain a maximum of limit elements with the last element containing the rest of string.</li>
+                    <li>If the limit parameter is zero, then this is treated as 1.</li>
+                    <li>If the limit parameter is negative, all components except the last -limit are returned.</li>
+                    <li>Returns an array of strings created by splitting the string parameter on boundaries formed by the separator.</li>
+                    <li>اذا حطيت قيمه اللمت بالسالب ,, مثلا سالب 1 معناته يلغيلي اخر قطعه من السترنغ, واذا سالب 2 مثلا يعني يلغيلي اخر قطعتين من السترنغ</li>
+                </ul>
+            </div>
+
+            <div class="page" id="strings">
+                The list showing on the left contain the most usable string methods. 
+            </div>
+
+            <div class="page" id="arrays">
+                <h2>Arrays</h2>
+                <h3>array:</h3>
+                <p>An array is a special variable, which can hold more than one value at a time.</p>
+                <div class="spacer"></div>
+
+
+
+                <h3>In PHP, there are three types of arrays:</h3>
+                <ul>
+                    <li>Indexed arrays - Arrays with a numeric index</li>
+                    <li>Associative arrays - Arrays with named keys</li>
+                    <li>Multidimensional arrays - Arrays containing one or more arrays</li>
+                </ul>
+                <div class="spacer"></div>
+
+
+
+                <h3>In PHP, the array() function is used to create an array:</h3>
+                <fieldset>
+                    <pre><code>$cars = array("Volvo", "BMW", "Toyota");</code></pre>
+                </fieldset><div class="spacer"></div>
+
+                <h3>To add new element to an existing indexed array, we use the following way:</h3>
+                <fieldset>
+                    <pre><code>$cars[] = "Audi";</code></pre>basic
+                </fieldset><br>
+                <p>note: this will NOT re-assign the array value, but adds new el.</p><div class="spacer"></div>
+                <h3>Assotiative Arrays:</h3>
+                <ul>
+                    <li>each element in the associative array has both key and value</li>
+                    <li>the key accepts string or integer only</li>
+                    <li>the key MUST be unique and not doublicated</li>
+                    <li title="مثلا اذا جان اكو قبله اندكس 2, فراح يحط اندكس 3 تلقائيا">if we didn't determine the key, it will be the 0 index or the next index</li>
+                    <li>we can make the key as empty, using "" or null</li>
+                </ul><div class="spacer"></div>
+                
+                <h3>To add new element to an existing associative array, we use the following way:</h3>
+                <fieldset>
+                    <pre><code>
+$cars["Germany"] = "Audi";
+$cars[4] = "Honda;"
+                    </code></pre>basic
+                </fieldset><div class="spacer"></div>
+
+                <h3>Multi-dimensional array:</h3>
+                means the array that has another one or more arrays as its elements
+                <fieldset>
+                    <pre><code>
+$food = array(
+    "drinks" => array("Water", "Tea", "Pepsi"),
+
+    "meat" => array(
+        "fish" => array("Tuna", "Salamon"),
+        "Checken" => array("Breast", "Wings"),
+        "Beef"
+    ),
+
+    "frouts" => array("Apple", "Banana", "Peach"),
+)
+                    </code></pre>
+                </fieldset><div class="spacer"></div>
+
+                <code>
+                    <b>print_r()</b><p>print_r($arrayName)</p><span>output the structure of the array </span>
+                    <b>count()</b><p>count($arrayName)</p><span>return the length of the array</span>
+                </code>
+            </div>
+            <div class="page" id="inArray">
+                <h4>in_array()</h4>
+                Checks if a value exists in an array.<br><br>
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>in_array($needle, $haystack, $strict = false/true)</code></pre>                </pre>
+                </fieldset><br>
+                <ul>
+                    <li>$needle: the searched value.</li>
+                    <li>$haystack: the array.</li>
+                    <li>$strict: If the third parameter strict is set to true then the in_array() function will also check the types of the needle in the haystack.</li>
+                </ul><br>
+                <q>Returns true if needle is found in the array, false otherwise.</q><div class="spacer"></div>
+            </div>
+
+            <div class="page" id="arraySearch">
+                <h4>array_search()</h4>
+                Searches the array for a given value and returns the first corresponding key if successful.<br><br>
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>array_search($needle, $haystack, $strict = false|true)</code></pre>                </pre>
+                </fieldset><br>
+                <ul>
+                    <li>$needle: the searched value, If needle is a string, the comparison is done in a case-sensitive manner.</li>
+                    <li>$haystack: the array.</li>
+                    <li>$strict: If the third parameter strict is set to true then the array_search() function will also check the types of the needle in the haystack.</li>
+                </ul><br>
+                <q>Returns the key for needle if it is found in the array, false otherwise.</q><div class="spacer"></div>
+            </div>
+
+            <div class="page" id="arrayKeyExist">
+                <h4>array_key_exists()</h4>
+                Checks if the given key or index exists in the array.<br><br>
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>array_key_exists( string|int $key, $array)</code></pre>                </pre>
+                </fieldset><br>
+                <ul>
+                    <li>$key: a value to check.</li>
+                    <li>$haystack: an array with keys to check.</li>
+                </ul><br>
+                <q>returns true if the given key is set in the array. key can be any value possible for an array index.</q><div class="spacer"></div>
+            </div>
+
+            <div class="page" id="arrayPush">
+                <h4>array_push()</h4>
+                Push one or more elements onto the end of array.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>array_push( $array, $item1, $item2, ...)</code></pre>                </pre>
+                </fieldset><br>
+                <ul>
+                    <li>$array: required.</li>
+                    <li>$item1: required.</li>
+                </ul><br>
+                <q>Returns the new number of elements in the array.</q>
+            </div>
+
+            <div class="page" id="arrayUnshift">
+                <h4>array_unshift()</h4>
+                Push one or more elements to the beginning of array.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>array_unshift( $array, $item1, $item2, ...)</code></pre>                </pre>
+                </fieldset><br>
+                <ul>
+                    <li>$array: required.</li>
+                    <li>$item1: required.</li>
+                </ul><br>
+                <q>Returns the new number of elements in the array.</q>
+            </div>
+
+            <div class="page" id="arrayPop">
+                <h4>array_pop()</h4>pops and returns the value of the last element of array, shortening the array by one element.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>array_pop( $array )</code></pre>
+                </fieldset><br>
+                <ul>
+                    <li>$array: required.</li>
+                </ul><br>
+                <q>Returns the value of the last element of array. If array is empty (or is not an array), null will be returned.</q>
+            </div>
+
+            <div class="page" id="arrayShift">
+                <h4>array_shift()</h4>shifts (remove) the first value of the array off and returns it.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>array_shift( $array )</code></pre>
+                </fieldset><br>
+                <ul>
+                    <li>$array: required.</li>
+                    <li>All numerical array keys will be modified to start counting from zero while literal keys won't be affected.</li>
+                </ul><br>
+                <q>Returns the shifted value. If array is empty (or is not an array), null will be returned.</q>
+            </div>
+
+            <div class="page" id="arraySort">
+                <h4>sort()</h4>Sorts an array in ascending order.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>sort( $array, SORTING_TYPE )</code></pre>
+                </fieldset><br>
+                <ul>
+                    <li>deals mostly with the indexed array.</li>
+                    <li>هاي المثود تعيد ترتيب العناصر وتنطيهم اندكسات جديده بعد الترتيب ومتحتفظ بالاندكسات القديمه الا اذا جان الكي عباره عن سترنغ</li>
+                    <li>If two members compare as equal, they retain their original order.</li>
+                    <li>SORTING_TYPE used to modify the sorting behavior using these values:</li>
+                    <ul>
+                        <li>SORT_REGULAR - compare items normally</li>
+                        <li>SORT_NUMERIC - compare items numerically</li>
+                        <li>SORT_STRING - compare items as strings</li>
+                    </ul>
+                </ul><br>
+                <q>Always returns true.</q>
+            </div>
+
+            <div class="page" id="arrayRSort">
+                <h4>rsort()</h4>Sorts an array in descending order.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>rsort( $array, SORTING_TYPE )</code></pre>
+                </fieldset><br>
+                <ul>
+                    <li>deals mostly with the indexed array.</li>
+                    <li>هاي المثود تعيد ترتيب العناصر وتنطيهم اندكسات جديده بعد الترتيب ومتحتفظ بالاندكسات القديمه الا اذا جان الكي عباره عن سترنغ</li>
+                    <li>If two members compare as equal, they retain their original order.</li>
+                    <li>SORTING_TYPE used to modify the sorting behavior using these values:</li>
+                    <ul>
+                        <li>SORT_REGULAR - compare items normally</li>
+                        <li>SORT_NUMERIC - compare items numerically</li>
+                        <li>SORT_STRING - compare items as strings</li>
+                    </ul>
+                </ul><br>
+                <q>Always returns true.</q>
+            </div>
+
+            <div class="page" id="arrayASort">
+                <h4>asort()</h4>Sort an array in ascending order and maintain index association.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>asort( $array, SORTING_TYPE )</code></pre>
+                </fieldset><br>
+                <ul>
+                    <li>keeps the value of the keys</li>
+                    <li>deals mostly with the associative arrays.</li>
+                    <li>If two members compare as equal, they retain their original order.</li>
+                    <li>SORTING_TYPE used to modify the sorting behavior using these values:</li>
+                    <ul>
+                        <li>SORT_REGULAR - compare items normally</li>
+                        <li>SORT_NUMERIC - compare items numerically</li>
+                        <li>SORT_STRING - compare items as strings</li>
+                    </ul>
+                </ul><br>
+                <q>Always returns true.</q>
+            </div>
+
+            <div class="page" id="arrayARSort">
+                <h4>arsort()</h4>Sort an array in descending order and maintain index association.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>arsort( $array, SORTING_TYPE )</code></pre>
+                </fieldset><br>
+                <ul>
+                    <li>keeps the value of the keys</li>
+                    <li>deals mostly with the associative arrays.</li>
+                    <li>If two members compare as equal, they retain their original order.</li>
+                    <li>SORTING_TYPE used to modify the sorting behavior using these values:</li>
+                    <ul>
+                        <li>SORT_REGULAR - compare items normally</li>
+                        <li>SORT_NUMERIC - compare items numerically</li>
+                        <li>SORT_STRING - compare items as strings</li>
+                    </ul>
+                </ul><br>
+                <q>Always returns true.</q>
+            </div>
+
+            <div class="page" id="arrayASort">
+                <h4>asort()</h4>Sort an array in ascending order and maintain index association.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>asort( $array, SORTING_TYPE )</code></pre>
+                </fieldset><br>
+                <ul>
+                    <li>keeps the value of the keys</li>
+                    <li>deals mostly with the associative arrays.</li>
+                    <li>If two members compare as equal, they retain their original order.</li>
+                    <li>SORTING_TYPE used to modify the sorting behavior using these values:</li>
+                    <ul>
+                        <li>SORT_REGULAR - compare items normally</li>
+                        <li>SORT_NUMERIC - compare items numerically</li>
+                        <li>SORT_STRING - compare items as strings</li>
+                    </ul>
+                </ul><br>
+                <q>Always returns true.</q>
+            </div>
+
+            <div class="page" id="arrayARSort">
+                <h4>arsort()</h4>Sort an array in descending order and maintain index association.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>arsort( $array, SORTING_TYPE )</code></pre>
+                </fieldset><br>
+                <ul>
+                    <li>keeps the value of the keys</li>
+                    <li>deals mostly with the associative arrays.</li>
+                    <li>If two members compare as equal, they retain their original order.</li>
+                    <li>SORTING_TYPE used to modify the sorting behavior using these values:</li>
+                    <ul>
+                        <li>SORT_REGULAR - compare items normally</li>
+                        <li>SORT_NUMERIC - compare items numerically</li>
+                        <li>SORT_STRING - compare items as strings</li>
+                    </ul>
+                </ul><br>
+                <q>Always returns true.</q>
+            </div>
+
+            <div class="page" id="arrayKSort">
+                <h4>ksort()</h4>Sort an array by key in ascending order.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>ksort( $array, SORTING_TYPE )</code></pre>
+                </fieldset><br>
+                <ul>
+                    <li>maintain the value of the keys</li>
+                    <li>deals only with the associative arrays.</li>
+                    <li>If two members compare as equal, they retain their original order.</li>
+                    <li>SORTING_TYPE used to modify the sorting behavior using these values:</li>
+                    <ul>
+                        <li>SORT_REGULAR - compare items normally</li>
+                        <li>SORT_NUMERIC - compare items numerically</li>
+                        <li>SORT_STRING - compare items as strings</li>
+                    </ul>
+                </ul><br>
+                <q>Always returns true.</q>
+            </div>
+
+            <div class="page" id="arrayKRSort">
+                <h4>krsort()</h4>Sort an array by key in descending order.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>krsort( $array, SORTING_TYPE )</code></pre>
+                </fieldset><br>
+                <ul>
+                    <li>maintain the value of the keys</li>
+                    <li>deals only with the associative arrays.</li>
+                    <li>If two members compare as equal, they retain their original order.</li>
+                    <li>SORTING_TYPE used to modify the sorting behavior using these values:</li>
+                    <ul>
+                        <li>SORT_REGULAR - compare items normally</li>
+                        <li>SORT_NUMERIC - compare items numerically</li>
+                        <li>SORT_STRING - compare items as strings</li>
+                    </ul>
+                </ul><br>
+                <q>Always returns true.</q>
+            </div>
+
+            <div class="page" id="arrayReverse">
+                <h4>array_reverse()</h4>
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>array_reverse( $array, PRESERVE_KEYS )</code></pre>
+                </fieldset><br>
+                <ul>
+                    <li>Takes an input array and returns a new array with the order of the elements reversed.</li>
+                    <li>If set to true numeric keys are preserved. Non-numeric keys are not affected by this setting and will always be preserved.</li>
+                    <li>Returns the reversed array.</li>
+                </ul>
+
+            </div>
+
+            <div class="page" id="shuffle">
+                <h4>shuffle()</h4>Shuffle an array.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>shuffle( $array )</code></pre>
+                </fieldset><br>
+                <ul>
+                    <li>لا تحتفظ بقيمة الاندكسات او المفاتيح لك قيمه</li>
+                    <li>Returns true on success or false on failure.</li>
+                </ul>
+
+            </div>
+
+            <div class="page" id="arrayFill">
+                <h4>array_fill()</h4>Fill an array with values.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>array_fill( $start_index, int $count, $value )</code></pre>
+                </fieldset><br>
+                <ul>
+                    <li>start_index: The first index of the returned array.</li>
+                    <li>count: Number of elements to insert. Must be greater than or equal to zero.</li>
+                    <li>value: the value to use for filling.</li>
+                    <li>Returns the filled array.</li>
+                </ul>
+                <q>WARNING: don't use negative numbers in parameter count</q>
+            </div>
+
+            <div class="page" id="arraySum">
+                <h4>array_sum()</h4>Calculate the sum of values in an array
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>array_sum( $array )</code></pre>
+                </fieldset><br>
+                <ul>
+                    <li>Ignores the strings if found and takes the numbers only.</li>
+                    <li>Works with both indexed and associative arrays.</li>
+                    <li>Takes both integer and floating numbers.</li>
+                    <li>Returns the sum of values as an integer or float; 0 if the array is empty.</li>
+                </ul>
+            </div>
+
+            <div class="page" id="arrayRand">
+                <h4>array_rand()</h4>Pick one or more random keys out of an array.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>array_rand($array,  number of picked keys)</code></pre>
+                </fieldset><br>
+                <ul>
+                    <li>When picking only one entry, array_rand() returns the key for a random entry. Otherwise, an array of keys for the random entries is returned.</li>
+                </ul>
+
+            </div>
+
+            <div class="page" id="arrayUnique">
+                <h4>array_unique()</h4>Removes duplicate values from an array.
+                <fieldset>
+                    <legend><h5>Syntax:</h5></legend>
+                    <pre><code>array_unique( $array, SORT_STRING)</code></pre>
+                </fieldset><br>
+                <ul>
+                    <li>SORT_REGULAR - compare items normally</li>
+                    <li>SORT_NUMERIC - compare items numerically</li>
+                    <li>SORT_STRING - compare items as strings</li>
+                </ul>
+                <q>Returns the filtered array.</q>
+            </div>
+
+            <div class="page" id="output">
+                <h2>Output</h2>
+                <code>
+                    <b>&lt;?php  ...  ?&gt;</b><p></p><span>the main parent tags of php</span>
+                    <b>echo "string";</b><p>echo "Hello";</p><span>output all kinds of data</span>
+                    <b>echo "HTML elements";</b><p></p><span>to output HTML elements</span>
+                </code>
+            </div>
+            <div class="page" id="important">
+                <h2>Important Notes</h2>
+                <ul>
+                    <li>it is possible to combine PHP and HTML code inside the PHP file</li>
+                    <li><span>\</span> the back-slash used for skipping the next pre-assigned</li>
+                    <li><span>phpinfo()</span> is a method the return the php version in your PC and many many other details</li>
+                    <li><span>dirname(__FILE__)</span> : this function return the origin local path of the file</li>
+                </ul>
+            </div>
+            <div class="page" id="variables">
+                <h2>Variables</h2>
+                <code>
+                    <b>$varName = value;</b><p>$age = 33;</p><span>declaring & calling variable</span>
+                </code>
+            </div>
+            <div class="page" id="comment">
+                <h2>Comments</h2>
+                <code>
+                    <b>//</b>
+                    <p></p>
+                    <p>like javascript</p>
+
+                    <b>/*   */</b><p></p><p></p>
+                    <b>#</b><p></p><p>Unix shell comment style</p>
+                </code>                
+            </div>
+            <div class="page" id="concat">
+                <h2>Concatenation</h2>
+                <code>
+                    <b>.</b><p>echo "string" . "string"</p><span>the dot is the tool used to concatenate to output data</span>
+                    <b>.=</b><p>$skills>$skills = "HTML"; </br>$skills .= "CSS";</p><span>used to add new content to the pre-defined one in a variable [ NOT re-assign ]</span>
+                </code>
+            </div>
+            <div class="page" id="dataTypes">
+                <h2>Data-Types</h2>
+                <code>
+                    <b>string</b><p>$txt = "I love PHP";</p> <span>between 2 qoutes</span>
+                    <b>Integer</b><p>$mynum = 100;</p><span>all integer numbers, including negatives</span>
+                    <b>Boolean</b><p>true  ||  false</p><span></span>
+                    <b>float  ||  double</b><p>5.2  ,  -10.13</p><span>all floating point numbers, real numbers including negatives</span>
+                    <b>array</b><p></p><span>arrays</span>
+                    <b>null</b><p>NULL</p><span>can be written in small or capital letters</span>
+                    <b>obeject</b><p>object</p><span></span>
+                    <b>resource</b><p></p><span>كل المعلومات الجايه من بره اللغه مثل المعلومات الجايه من السيرفر</span><hr><hr><hr>
+                    <b>gettype($var);</b><p></p><span>a function to get the type of the data</span>
+                    <b>var_dump($var);</b><p></p><span>a function to get the type of the data with more details</span>
+
+                </code>
+            </div>
+            <div class="page" id="constants" >
+                <h2>Constants</h2>
+                <code>
+                    <b style="grid-column: 1 / 3 ;">define("CONST_NAME", value, case-insensitive);</b><span>the Syntax</span>
+                    <b>case-insensitve</b><p>false by default</p><span>can be true to make it insensitve</span>
+                    <b>Scope</b><p>Global</p><span>inside and outside functions</span>
+                    <b>Can't be re-assigned</b><p></p><span>differes from variables</span>
+                    <b>No need of $</b><p>echo FIRST_NAME;</p><span>no need of writting $ when we call the constant</span>
+                    <b>Naming</b><p>API_KEY</p><span>it is prefered to write it in capital letters</span>
+
+                </code>
+            </div>
+            <div class="page" id="ifStatement">
+                <h2>if-statement</h2>
+                <h4 style="color: indianred;">Syntax :</h4>
+                <pre>
+                    <code style="display: block;">
+                        if (condition) {
+                            code to be executed if this condition is true;
+                          } elseif (condition) {
+                            code to be executed if first condition is false and this condition is true;
+                          } else {
+                            code to be executed if all conditions are false;
+                          }
+                    </code>
+                </pre>
+            </div>
+            <div class="page" id="operators">
+                <h2>Arthmatic Operators</h2>
+                <code>
+                    <b>+</b><p>Summation</p><span></span>
+                    <b>-</b><p>Subtraction</p><span></span>
+                    <b>*</b><p>Multiplication</p><span></span>
+                    <b>/</b><p>Division</p><span></span>
+                    <b>%</b><p>Modulus</p><span>the remaining from a division</span> 
+                    <b>+=</b><p>var = var + newVal</p><span></span>
+                    <b>-=</b><p></p><span></span>
+                    <b>*=</b><p></p><span></span>
+                    <b>/=</b><p></p><span></span>
+                </code>
+            </div>
+            <div class="page" id="comparision">
+                <h2>Comparision Operators</h2>
+                <code>
+                    <b>==</b><p>equal</p><span></span>
+                    <b>!=</b><p>NOT equal</p><span></span>
+                    <b>&lt;&gt;</b><p>NOT equal</p><span></span>
+                    <b>===</b><p>Identical</p><span></span>
+                    <b>!==</b><p>Not Identical</p><span></span>
+                    <b>&gt;</b><p>greater than</p><span></span>
+                    <b>&gt;=</b><p>greater than or equal</p><span></span>
+                    <b>&lt;</b><p>less than</p><span></span>
+                    <b>&lt;=</b><p>less than or equal</p><span></span>
+                    
+                </code>
+            </div>
+            <div class="page" id="pre-post">
+                <h2>Increament - Decreament</h2>
+                <code>
+                    <b>$var++</b><p>post increament</p><span>output the inintial value first, then starts the increament</span>
+                    <b>++$var</b><p>pre increament</p><span>starts the increament before outputing the initial value</span>
+                    <b>$var--</b><p>post decreament</p><span>output the inintial value first, then starts the decreament</span>
+                    <b>--$var</b><p>pre decreament</p><span>starts the decreament before outputing the initial value</span>
+                </code>
+            </div>
+            <div class="page" id="logical">
+                <h2>Logical Operators</h2>
+                <code>
+                    <b>&&</b><p>cond.1 and cond.2</p><span>best practice</span>
+                    <b>and</b><p>cond.1 and cond.2</p><span></span>
+                    <b>||</b><p>cond.1 or cond.2</p><span>best practice</span>
+                    <b>or</b><p>cond.1 or cond.2</p><span></span>
+                    <b>xor</b><p>cond.1 or cond.2</p><span>but not all conditions</span>
+                    <b>!</b><p>Not</p><span>the opposite of anything</span>
+                </code>
+            </div>
+            <div class="page" id="errorOperator">
+                <h2>Error Control Operator</h2>
+                <code>
+                    <b style="font-size: 2em;">@</b> <p>error control operator</p><span>used to ignore or hide any error expression occurs on requesting anything from the server.</span>
+                    <b>die</b><p>or die("custom error-msg")</p><span>to output a custom erro msg</span>
+                </code><br>
+                <h2>Example :</h2>
+                <pre>
+                    <code>
+                        &lt;?php
+                            $fp = @fopen("nosuchfile.txt","r") or die("this file is not found");
+                            echo "Hello World";
+                        ?&gt;
+                    </code>
+                </pre>
+            </div>
+            <div class="page" id="loops">
+                <h2>for-loop</h2>
+                <fieldset>
+                    <legend><h4>Syntax :</h4></legend>
+                    <pre>
+                        <code>
+                            for (init counter; test counter; increment counter) {
+                                code to be executed for each iteration;
+                            }
+                        </code>
+                    </pre>
+                </fieldset><br>
+                <code>
+                    <b>count($array)</b><p></p><span>to pick the length of the array, like .length in javascript</span>
+                    <b>break;</b><p>break the loop</p><span>like in javascript</span>
+                </code><br>
+                <div style="background-color: #21252B; height: 100px;"></div>
+                <h2>while-loop</h2>
+                <fieldset>
+                    <legend><h4>Syntax :</h4></legend>
+                    <pre>
+                        <code>
+                            while (condition is true) {
+                                code to be executed;
+                            }
+                        </code>
+                    </pre>
+                </fieldset>
+                <h4>Example</h4>
+                <pre>
+                    <code>
+                        $x = 1;
+                        while($x <= 5) {
+                        echo "The number is: $x";
+                        $x++;
+                        }
+                    </code>
+                </pre>
+                <div style="background-color: #21252B; height: 100px;"></div>
+                <h2>do-while</h2>
+                <fieldset>
+                    <legend><h4>Syntax :</h4></legend>
+                    <pre>
+                        do {
+                            code to be executed;
+                          } while (condition is true);
+                    </pre>
+                </fieldset><br>
+                <h4>Example</h4>
+                <pre>
+                    <code>
+                        &lt;?php
+                            $i = 0;
+                            do {
+                                echo $i;
+                            } while ($i > 0);
+                        ?&gt;
+                    </code>
+                </pre>
+                <div style="background-color: #21252B; height: 100px;"></div><br>
+                <h2>foreach</h2>
+                <p>The foreach() method is used to loop through the elements in an indexed or associative array. It can also be used to iterate over objects. This allows you to run blocks of code for each element.</p>
+                <b>The foreach() method has two syntaxes, one for each type of array.</b>
+
+                <fieldset>
+                    <legend><h4>Syntax : for indexed arrays</h4></legend>
+                    <pre>
+                        <code>
+                            foreach ($array as $value) {
+                                code to be executed;
+                            }
+                        </code>
+                    </pre>
+                </fieldset><br>
+                <fieldset>
+                    <legend><h4>Syntax : for associative arrays</h4></legend>
+                    <pre>
+                        <code>
+                            foreach ($array as $key => $value) {
+                                code to be executed;
+                            }
+                        </code>
+                    </pre>
+                </fieldset><br>
+                <p>You can find examles localy in the folder "Practice", or check the links below</p>
+                <a href="https://flexiple.com/php-foreach/">Online Foreach 1</a><br>
+                <a href="https://www.w3schools.com/Php/php_looping_foreach.asp">Online Foreach 2</a>
+            </div>
+            <div class="page" id="php-functions">
+                <h2>Functions</h2>
+                <code>
+                    <b>argument default value</b><p style="grid-column: 2/4;">function greet($name <span id="spesArg">= unknown</span>,$age){}</p>
+                </code>
+            </div>
+            
+        </main>
+    </div>
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
