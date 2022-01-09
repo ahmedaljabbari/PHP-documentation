@@ -57,6 +57,12 @@ $(".dateTime").click(function(){
     $(".date_section").slideToggle();
 });
 
+function opna() {
+    window.open('C:/xampp/htdocs/PHP_Course/test')
+}
+
+
+
 
 /* 
 <h4></h4>

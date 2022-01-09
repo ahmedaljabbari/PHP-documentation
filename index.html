@@ -68,6 +68,7 @@
                 <p class="substr">substr()</p>
                 <p class="substr_count">substr_count()</p>
                 <p class="substr_compare">substr_compare()</p>
+                <p class="htmlspecialchars">htmlspecialchars()</p>
 
             </div>
             <p class="fileSystem">File System <i class="fas fa-chevron-circle-down"></i></p>
@@ -128,13 +129,16 @@
                 <p class="strtotime">strtotime()</p>
             </div>
             <p class="magicalConstants">Magical Constants</p>
-            <p class="output">Output</p>
             <p class="variables">Variables</p>
             <p class="comment">Comments</p>
+            <p class="constants">Constants</p>
             <p class="concat">Concatenation</p>
             <p class="dataTypes">Data Types</p>
-            <p class="constants">Constants</p>
+            <p class="mathFunctions">Math Function</p>
+            <p class="output">Output</p>
             <p class="ifStatement">if-statement</p>
+            <p class="ternary_operator">Ternary Operators</p>
+            <p class="null_coalescing">Null Coalescing</p>
             <p class="operators">Arthmatic Operators</p>
             <p class="comparision">Comparison Operators</p>
             <p class="pre-post">increament / decreament</p>
@@ -142,11 +146,68 @@
             <p class="errorOperator">Error Control Operator</p>
             <p class="loops">Loops</p>
             <p class="php-functions">Functions</p>
-            <p class="ControlStructures">Control Structures</p>     
+            <p class="ControlStructures">Control Structures</p>  
+            <p class="clssesAndObjects">Classes & Objects</p>   
 
             <p class="important">Important Notes</p>
         </aside>
         <main class="content">
+            <div class="page" id="clssesAndObjects">
+                <h4>PHP Class</h4>
+                <div class="myTable">
+                    <span>Class Name</span><div>A valid class name starts with a letter or underscore, followed by any number of letters, numbers, or underscores.</div>
+                    <span>Class Name RegExp</span><div>^[a-zA-Z_\x80-\xff][a-zA-Z0-9_\x80-\xff]*$</div>
+                    <span>Class Properties</span><div>constants & variables</div>
+                    <span>Class Functions</span><div>methods</div>
+                    <span>pseudo-variable $this</span><div>is available when a method is called from within an object context. $this is the value of the calling object.</div>
+
+                </div>
+                <h3>Create new instance of a class:</h3>
+                <p>To create an instance of a class, the new keyword must be used. An object will always be created unless the object has a constructor defined that throws an exception on error. Classes should be defined before instantiation (and in some cases this is a requirement).</p>
+                <div class="spacer"></div>
+                <h3>PHP class <i>constructor</i>:</h3>
+                <p>PHP allows developers to declare constructor methods for classes. Classes which have a constructor method call this method on each newly-created object, so it is suitable for any initialization that the object may need before it is used.</p>
+                <h5>الكونستركتر هو عباره عن مثود داخل الكلاس تشتغل كل مره يتم فيها عمل اوبجكت جديد من هذا الكلاس وتكون تأدي فد وظيفه مثلا اعطاء قيم اوليه لمتغيرات موجوده داخل الكلاس الاساسي</h5>
+            </div>
+
+            <div class="page" id="null_coalescing">
+                <h4>null coalescing operator (??)</h4>
+                In PHP 7, a new feature, null coalescing operator (??) has been introduced. It is used to replace the ternary operation in conjunction with isset() function. The Null coalescing operator returns its first operand if it exists and is not NULL; otherwise it returns its second operand.
+                <h5>الدبل علامة سؤال هي عباره عن اوبريتور بيه قيمتين قيمه اساسيه وقيمه ثانويه اذا القيمه الاساسيه موجوده فراح يعرضها واذا ما موجوده يعني ما الها قيمه فراح يعرض القيمه الثانويه كبديل</h5>
+                <div class="spacer"></div>
+                <fieldset>
+                    <legend><h5>Example:</h5></legend>
+                    <pre><code>$username = $_GET['user'] ?? 'nobody';</code></pre>
+                </fieldset><br>
+            </div>
+
+            <div class="page" id="ternary_operator">
+                <h4>PHP ternary operator makes the code shorter and more readable.</h4>
+                The ternary operator is a shorthand for the if...else statement.
+
+                <fieldset>
+                    <legend><h5>Example:</h5></legend>
+                    <pre><code>$result = condition ? value1 : value2;</code></pre>
+                </fieldset><br>
+                <div class="myTable">
+                    <span>condition</span><div>the condition to evaluate</div>
+                    <span>if true</span><div>the right-hand expression returns the value1</div>
+                    <span>if false</span><div>the right-hand expression returns the value2</div>
+                    <span>returned value</span><div>PHP assigns the result of the right-hand expression to the $result variable.</div>
+                </div>
+            </div>
+
+            <div class="page" id="htmlspecialchars">
+                <h4>htmlspecialchars()</h4>
+                فنكشن تحول النصوص السكربتيه المشكوك بيها اللي يدخله المستخدم بفد فورم او شي ..... تحولها الى نص سترنغ عادي وتهمل كل الرموز البرمجيه وتعتبرها سترنغ عادي .. تفيد هاي بامور الحمايه من هجمات الهكرز
+                <div class="spacer"></div>
+                <a href="https://www.php.net/manual/en/function.htmlspecialchars.php" target="_blank" rel="noopener noreferrer">Read more</a>
+            </div>
+
+            <div class="page" id="mathFunctions">
+                <a href="https://www.w3schools.com/php/php_ref_math.asp" target="_blank" rel="noopener noreferrer">w3schools math functions</a>
+            </div>
+
             <div class="page" id="strtotime">
                 <h3>strtotime()</h3>
 
@@ -1449,7 +1510,14 @@ echo chunk_split($str,6,"...");
             </div>
 
             <div class="page" id="strings">
-                The list showing on the left contain the most usable string methods. 
+                <p>Use double qoutes or single qoutes to identity the string</p>
+                <div class="spacer"></div>
+
+                <h4>the difference between single and double qoutes is:</h4>
+                <ul>
+                    <li>in double qoutes we can concatenate a variable inside the string directly</li>
+                    <li>While in single qoutes we have to use the dot (.) to concatenate a variable to a string.</li>
+                </ul>
             </div>
 
             <div class="page" id="arrays">
@@ -1518,8 +1586,10 @@ $food = array(
                 <code>
                     <b>print_r()</b><p>print_r($arrayName)</p><span>output the structure of the array </span>
                     <b>count()</b><p>count($arrayName)</p><span>return the length of the array</span>
+                    <b><a href="https://www.w3schools.com/Php/func_array.asp" target="_blank">all array functions w3schools</a></b>
                 </code>
             </div>
+
             <div class="page" id="inArray">
                 <h4>in_array()</h4>
                 Checks if a value exists in an array.<br><br>
@@ -1874,6 +1944,8 @@ $food = array(
                     <li><span>\</span> the back-slash used for skipping the next pre-assigned</li>
                     <li><span>phpinfo()</span> is a method the return the php version in your PC and many many other details</li>
                     <li><span>dirname(__FILE__)</span> : this function return the origin local path of the file</li>
+                    <li>لمن نفتح السيرفر ال لوكال عن طريق الاباتشي هو راح يفتح اي ملف نختاره وراح يبحث اوتوماتيكيا عن اي فايل اسمه اندكس دوت بيئجبي او دوت هتمل ويعرضه واذا ماكو هيج فايل فراح يعرض لسته بمحتويات هذا الملف</li>
+                
                 </ul>
             </div>
             <div class="page" id="variables">
@@ -1881,6 +1953,11 @@ $food = array(
                 <code>
                     <b>$varName = value;</b><p>$age = 33;</p><span>declaring & calling variable</span>
                 </code>
+
+                <div class="myTable">
+                    <span>global $varName;</span><div>use this keyword to get the value of a variable from the global scope inside a local scope of a function.</div>
+                    <span>&$varName</span><div>use this to refer that the argument in the function is actiualy is a variable in the global scope.</div>
+                </div>
             </div>
             <div class="page" id="comment">
                 <h2>Comments</h2>
